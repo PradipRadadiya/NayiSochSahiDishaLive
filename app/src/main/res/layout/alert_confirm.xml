@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="Overdraw"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/round_back_gradiant"
+        android:orientation="horizontal">
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/customTextViewBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:text=" Alert"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/img_close_popup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:src="@drawable/ic_close"
+            android:contentDescription="TODO" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:ignore="ExtraText,UselessParent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_alertnotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lin_comment"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="7dp"
+                    android:text="Are you sure?"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="You want submit this competition?"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:text="Ok"
+                    android:background="@drawable/round_rect_shapeoneselect"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="right"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

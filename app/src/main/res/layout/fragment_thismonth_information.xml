@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/list"
+            android:background="@color/homepage_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            >
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Data"
+        android:textSize="40sp"
+        android:id="@+id/txt_nodata_today"
+        android:textColor="@color/colorTabColor"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText" />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

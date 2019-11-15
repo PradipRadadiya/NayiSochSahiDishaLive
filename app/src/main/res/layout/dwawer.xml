@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_back"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:id="@+id/lin_mains"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txtby"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/lin_my_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_users"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/my_profile"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_b"
+                            style="@style/badge_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_vichar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_latestposts"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/vichar_kranti"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d"
+                            style="@style/badge_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_latestposts"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/alert"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_latest_posts"
+                            style="@style/badge_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_info"
+                        tools:ignore="ContentDescription" />
+
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/about" />
+
+                    <ImageView
+                        android:id="@+id/img_adds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add_black_24dp"
+
+                        android:contentDescription="TODO" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_show_hide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_aboutinfo"
+                        style="@style/TextviewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:padding="8dp"
+                        android:text="- About Guruji" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_aboutguruji"
+                        style="@style/TextviewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:padding="8dp"
+                        android:text="- Guruji's Vision" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_aboutmission"
+                        style="@style/TextviewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:padding="8dp"
+                        android:text="- Guruji's Mission" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_appinfo"
+                        style="@style/TextviewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:padding="8dp"
+                        android:text="- About App" />
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_info"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/information"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_infomation"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_event"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/event" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_event"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_thought"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_edit"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/thought"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_thought"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_music"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/audio"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_audio"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_video"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/video"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_video"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_picture"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/gallaery"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_qa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_help"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/question"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_qa"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_paste"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/competition"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_bypeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_users"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/bypeople"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_d_bypeople"
+                            style="@style/badge_text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_op"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_opinion"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/Opinionpoll"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+                <LinearLayout
+                    android:id="@+id/lin_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_setting"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        style="@style/TextviewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/setting"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/ViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social links:"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_facebook"
+                        tools:ignore="ContentDescription" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_youtube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_youtube"
+                        tools:ignore="ContentDescription" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

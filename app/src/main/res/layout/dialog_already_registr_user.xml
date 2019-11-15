@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_back"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/toolbar_home" />
+
+    <com.vimalsagarji.vimalsagarjiapp.util.UnderlineTextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Registered User"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+        android:visibility="gone"
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Email :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+        android:visibility="gone"
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/register_edittext"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:padding="10sp"
+        android:textColor="@color/black" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Mobile :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/register_edittext"
+        android:hint="Mobile No"
+        android:inputType="number"
+        android:maxLength="10"
+        android:lines="1"
+        android:padding="10sp"
+        android:textColor="@color/cardview_dark_background" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/round_rect_shapeoneselect"
+        android:inputType="number"
+        android:lines="1"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
+
+</LinearLayout>

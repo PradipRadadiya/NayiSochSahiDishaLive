@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homepage_back"
+    tools:ignore="Overdraw">
+
+    <include
+        android:id="@+id/toolbar_audio"
+        layout="@layout/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_audio"
+        android:background="@color/homepage_back"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txtCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:lines="1"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imgSerch"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:padding="2dp"
+            android:src="@drawable/search"
+            android:visibility="gone"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_audio_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:ignore="InconsistentLayout" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/nodataavi"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</LinearLayout>

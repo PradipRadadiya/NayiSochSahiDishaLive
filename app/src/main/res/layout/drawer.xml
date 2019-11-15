@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/homepage_back"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/dwawer">
+
+        <include layout="@layout/header_drawer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:background="@drawable/back_gradiant"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/drawer_footer"
+                android:contentDescription="TODO" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_gradiant"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/guruji"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</LinearLayout>

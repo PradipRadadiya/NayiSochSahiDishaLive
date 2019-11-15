@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTabBackground"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+
+    <!--<EditText
+        android:id="@+id/etUId"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextshape"
+        android:padding="10dp"
+        android:inputType="number"
+        android:layout_margin="5dp"
+        android:hint="Enter UID"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_gradiant"
+        >
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_gradiant"
+            android:padding="10dp"
+            android:text="Ask Question"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:contentDescription="TODO" />
+
+
+    </RelativeLayout>
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+        android:id="@+id/etAskQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:hint="Ask Question here...."
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_rect_shapeoneselect"
+        android:text="Post"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</LinearLayout>

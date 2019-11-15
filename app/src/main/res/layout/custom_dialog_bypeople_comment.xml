@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabBackground"
+    android:paddingBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:id="@+id/layout_byPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txtComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@+id/imgback"
+            android:text="Comments"
+            android:textColor="#03168f"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtComments"
+            android:layout_marginTop="5dp"
+            android:background="#03168f" />
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+            android:tint="@color/colorTabColor"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etComment"
+        android:layout_below="@+id/layout_byPeople">
+
+        <ListView
+            android:id="@+id/listbyPeopleComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/cardview_dark_background"
+            android:dividerHeight="1dp" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_nocomment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Comments\nAvailable"
+            android:textColor="@color/colorTabColor"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+        android:textColor="@color/cardview_dark_background"
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPost"
+        android:layout_margin="10dp"
+        android:background="@drawable/thoughtsedittext"
+        android:hint="comments"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_rect_shapeoneselect"
+        android:text="Post"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+</RelativeLayout>

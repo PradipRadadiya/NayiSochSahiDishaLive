@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/round_rect_shape"
+    android:orientation="vertical">
+
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+        android:id="@+id/txt_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="7dp"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:text="Test"
+        android:gravity="center_vertical"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="2dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="TODO"
+            android:background="@color/black"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/img_plays"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/play"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

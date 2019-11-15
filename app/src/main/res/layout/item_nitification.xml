@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_griditem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/round_rect_shape"
+        >
+        <!-- put whatever you want -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/notification_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:src="@drawable/infromation"
+
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                    android:id="@+id/txt_title"
+                    style="@style/itemtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:lineSpacingExtra="7dp"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:id="@+id/txt_content"
+                    style="@style/itemtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:lineSpacingExtra="7dp"
+                    android:textColor="@color/black"
+                    android:text="No Description available." />
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:id="@+id/txt_date"
+                    style="@style/itemtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="7dp"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

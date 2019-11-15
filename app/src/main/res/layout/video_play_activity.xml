@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_allEventSubItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabBackground"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <include
+        android:id="@+id/toolbar_all_event_subitem"
+        layout="@layout/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditTextBold
+        android:id="@+id/et_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="7sp"
+        android:background="@null"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint=""
+        android:padding="7sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_video"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:scaleType="centerCrop"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/img_plays"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/play"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:orientation="horizontal"
+           >
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:id="@+id/txtDate"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.7"
+                android:text="Date"
+                android:paddingLeft="10sp"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="3sp"
+                android:background="@drawable/competiti_edittext_shape"
+                android:layout_alignParentRight="true"
+                >
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5sp"
+                    />
+
+                <ImageView
+                    android:layout_marginLeft="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_black_24dp"
+                    android:layout_marginRight="5sp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:orientation="horizontal"
+            android:padding="10sp">
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Videolink :"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:id="@+id/txtvideolink"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="2.7"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:lineSpacingExtra="7sp"
+            android:padding="10sp"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        tools:ignore="RtlHardcoded">
+
+        <LinearLayout
+            android:id="@+id/lin_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5sp"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/img_like"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/like"
+                tools:ignore="ContentDescription" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:id="@+id/txt_like_event"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:text="0"
+                android:textColor="@color/red"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5sp"
+            tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/img_comment"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/comment"
+                tools:ignore="ContentDescription" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:id="@+id/txt_comment_event"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:text="0"
+                android:textColor="@color/red"
+
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- <tcking.github.com.giraffeplayer2.VideoView
+         android:id="@+id/video_view"
+         android:layout_width="match_parent"
+         android:layout_height="180sp"
+         android:layout_margin="8sp"
+         />-->
+
+
+</LinearLayout>
+

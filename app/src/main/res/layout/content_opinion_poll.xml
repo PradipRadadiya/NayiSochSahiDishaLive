@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_opninion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_back"
+    tools:ignore="Overdraw">
+
+    <include
+        android:id="@+id/toolbar_opinionPoll"
+        layout="@layout/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditTextBold
+        android:id="@+id/et_opinionPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_opinionPoll"
+        android:layout_centerVertical="true"
+        android:background="@color/colorTabBackground"
+        android:focusable="false"
+        android:hint="Opinion Poll"
+        android:lines="1"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/et_opinionPoll"
+        android:background="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_opinionPoll">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/activity_main_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ListView
+                android:id="@+id/listOpinionPoll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_nodata_today"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Data"
+            android:textColor="@color/colorTabColor"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_opinionPoll"
+        android:background="@color/white"
+        android:text="This feature will be activated when the number of application users increases to the required quantity.\n\nएप्लिकेशन के उपयोगकर्ताओं की संख्या पर्याप्त मात्रा में बढ़ जाने के बाद यह फीचर काम करेगा."
+        android:textSize="22dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:padding="25dp"
+        android:lineSpacingExtra="7dp"
+
+        />
+
+
+</RelativeLayout>

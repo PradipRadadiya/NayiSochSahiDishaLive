@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_back"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_home" />
+
+    <LinearLayout
+        android:id="@+id/lin_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Getting Marks"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_get_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Total Marks : "
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_total_marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Question Description"
+        android:padding="10sp"
+        android:textColor="@color/white"
+        android:layout_margin="5sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17sp"
+        android:background="@drawable/round_rect_shapeoneselect"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview_comp_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

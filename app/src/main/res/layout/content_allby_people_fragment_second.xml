@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/layout_likeComment"
+    android:background="@color/colorTabBackground"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.vimalsagarji.vimalsagarjiapp.activity.InformationDetailActivity"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/toolbar_allbyPepoleSecondActivity"
+            layout="@layout/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditTextBold
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/homepage_back"
+            android:ellipsize="end"
+            android:ems="7"
+            android:enabled="false"
+            android:focusable="true"
+            android:gravity="start"
+            android:lineSpacingExtra="7dp"
+            android:padding="7dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,TextFields"
+
+            />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/competiti_edittext_shape"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3sp">
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Share"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_share_black_24dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/kprogresshud_grey_color"
+                android:padding="3dp"
+                android:src="@drawable/gallary"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="50sp"
+                android:background="@color/view" />
+
+            <ImageView
+                android:id="@+id/img_audio"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:src="@drawable/audio"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="50sp"
+                android:background="@color/view" />
+
+            <ImageView
+                android:id="@+id/img_video_icon"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/video"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/red" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/img_bypeople"
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:layout_centerHorizontal="true"
+                            android:visibility="gone"
+                            tools:ignore="ContentDescription" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            android:id="@+id/txt_nodata"
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Image Not\nAvalable"
+                            android:textSize="30dp"
+                            android:visibility="gone"
+
+                            />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_plays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:padding="50dp"
+                                android:src="@drawable/play"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                        <com.vimalsagarji.vimalsagarjiapp.jcplayer.JcPlayerView
+                            android:id="@+id/jcplayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:id="@+id/lin_music"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <SeekBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgAudio"
+                                    android:layout_width="20dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/audio"
+                                    tools:ignore="ContentDescription" />
+
+                                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                                    android:id="@+id/audioImagname"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:minLines="2"
+                                    android:textColor="#111"
+                                    android:textSize="12sp"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:orientation="vertical"
+                                    tools:ignore="RtlHardcoded">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:gravity="right"
+                                        android:orientation="horizontal"
+                                        tools:ignore="RtlHardcoded">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginTop="7dp"
+                                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp">
+
+                                            <ImageView
+                                                android:layout_width="25dp"
+                                                android:layout_height="25dp"
+                                                android:layout_marginTop="5dp"
+                                                tools:ignore="ContentDescription,TooDeepLayout" />
+
+                                            <ImageView
+                                                android:layout_width="25dp"
+                                                android:layout_height="25dp"
+                                                android:layout_marginTop="5dp"
+                                                tools:ignore="ContentDescription" />
+                                        </RelativeLayout>
+
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginTop="7dp"
+
+                                            tools:ignore="ContentDescription" />
+
+
+                                    </LinearLayout>
+
+
+                                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="28dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:text="PlayingDuration"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+                                        android:visibility="gone"
+                                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="28dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:gravity="center"
+                                        android:text="Duration"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp"
+
+                                        tools:ignore="HardcodedText,RtlHardcoded" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Videolink :"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                        android:id="@+id/txtvideolink"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="7dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                </LinearLayout>
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15dp"
+                    android:text="Description:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:id="@+id/txtDescri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="7dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnLike"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.5"
+                    android:drawableLeft="@drawable/like"
+                    android:padding="10dp"
+                    android:text="Like"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTabColor"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btnLikeClick"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.5"
+                    android:padding="10dp"
+                    android:text="2"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTabColor"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btnComment"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.5"
+                    android:drawableLeft="@drawable/comment"
+                    android:padding="10dp"
+                    android:text="Comment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTabColor"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:ignore="RtlHardcoded">
+
+                <LinearLayout
+                    android:id="@+id/lin_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/img_like"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/like"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_like_event"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="14dp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/img_comment"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/comment"
+                        tools:ignore="ContentDescription" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_comment_event"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textColor="@color/red"
+
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabBackground"
+    tools:context="com.vimalsagarji.vimalsagarjiapp.categoryactivity.AudioCategory"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/toolbar_video"
+            layout="@layout/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditTextBold
+            android:background="@color/homepage_back"
+            android:id="@+id/etVideoCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_below="@+id/toolbar_video"
+            android:hint="Video Category"
+            android:padding="10dp"
+            android:lines="1"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imgSerch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/toolbar_video"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/search"
+            android:visibility="gone"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/etVideoCategory"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewline">
+
+            <GridView
+                android:id="@+id/grid_video"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:horizontalSpacing="5dp"
+                android:gravity="center"
+                android:numColumns="2"
+                android:layout_height="match_parent" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Category \n Available"
+                android:textSize="40sp"
+                android:id="@+id/txt_nodata_today"
+                android:textColor="@color/colorTabColor"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

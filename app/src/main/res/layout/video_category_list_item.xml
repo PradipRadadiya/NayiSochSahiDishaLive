@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_shape"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgVideo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="2dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgPlayVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="40dp"
+            android:src="@drawable/play"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgPlayPush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/audio_white_push"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgPlayVideo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/play"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_ff_new"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:id="@+id/txtVideoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgVideo"
+                android:ellipsize="end"
+                android:lineSpacingExtra="7dp"
+                android:maxLines="2"
+                android:text="VideoName fgfg dgf d fgf fg"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:id="@+id/txtVideoDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtVideoName"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/imgVideo"
+                android:lines="1"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtVideoDate"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/imgVideo"
+                android:orientation="horizontal">
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:id="@+id/txt_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5sp"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:text="0"
+                    android:textColor="@color/views"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5sp"
+                    android:gravity="right"
+                    android:text="Views"
+                    android:textColor="@color/views"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

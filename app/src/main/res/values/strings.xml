@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Nayi Soch, Sahi Disha</string>
+    <string name="default_notification_channel_id">nayisoch5</string>
+    <string name="text_test">Playing</string>
+    <string name="internet">Internet not connected.</string>
+    <string name="notregister">Please register to proceed!</string>
+    <string name="commentsuccess">Thank you for your valuable comments!</string>
+    <string name="likealready">Thank you! You have already liked it!</string>
+    <!--<string name="notregister">Please first register.</string>-->
+
+    <string name="authkey">170539A1PovTWJpc0s5996ef0e</string>
+    <string name="title_activity_main2">Nayi Soch, Sahi Disha</string>
+    <!--<string name="title_activity_main2">Aacharya Vimalsagarsooriji</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_name">Nayi Soch,Sahi Disha</string>
+    <!--<string name="title_name">Aacharya Vimalsagarsooriji</string>-->
+    <string name="title_activity_register" />
+
+    <string name="guruji">By : Aacharya Vimalsagarsuriji</string>
+
+    <string name="buy">Buy</string>
+    <string name="alert">Latest Posts</string>
+    <string name="about">About Us</string>
+    <string name="information">Information</string>
+    <string name="event">Event</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="thought">Thoughts</string>
+    <string name="gallaery">Gallery</string>
+    <string name="question">Q &amp; A</string>
+    <string name="competition">Competition</string>
+    <string name="Opinionpoll">Opinion Poll</string>
+    <string name="bypeople">By People</string>
+    <string name="jainism">JAINISM</string>
+    <string name="setting">Setting</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="gujrati">Gujrati</string>
+
+
+    <string name="about_guruji_eng">Before i start coding i have intialized the array constants ( member_names , profile_pics , statues , contactType  ) inside res/strings.xml . and also i  have kept  all the images inside the drawable folder which you  can find in the download source code below .Before i start coding i have intialized the array constants ( member_names , profile_pics , statues , contactType  ) inside res/strings.xml . and also i  have kept  all the images inside the drawable folder which you  can find in the download source code below .\n\nBefore i start coding i have intialized the array constants ( member_names , profile_pics , statues , contactType  ) inside res/strings.xml . and also i  have kept  all the images inside the drawable folder which you  can find in the download source code below .Before i start coding i have intialized the array constants ( member_names , profile_pics , statues , contactType  ) inside res/strings.xml . and also i  have kept  all the images inside the drawable folder which you  can find in the download source code below .</string>
+
+    <string name="about_guruji_hnd">
+
+         <![CDATA[<b>आचार्य श्री विमलसागरसूरीश्वरजी महाराज :<br> संक्षिप्त परिचय</b>\n<br><br>विश्व के प्राचीनतम जैन धर्म की अनमोल विरासत को अनेक प्रभावक जैनाचार्यों, मुनियों व महापुरुषों ने बचाया, समृद्ध किया और आगे बढ़ाया है.\n\n<br><br>विश्व कल्याणकारी और प्राणिमात्र के लिए हितकारी इस महान् धर्म और संस्कृति के संरक्षण व संवर्धन में वर्तमान में भी अनेक साधु-साध्वी, श्रावक-श्राविकाएं और युग मनीषी अपना-अपना योगदान कर रहे हैं. ऐसे ही वर्तमान के युग मनीषियों में आचार्य श्री विमलसागरसूरीश्वरजी महाराज का एक यशस्वी नाम है.<br><br>\n\n● <b>जन्म</b>\n\n<br>वैशाख शुक्ल द्वितीया, 23 अप्रैल 1966 को कर्नाटक के हिरियूर नगर में ओसवाल कुल में आपका जन्म हुआ. माता श्रीमती सुआदेवी बागरेचा एवं पिता श्रीमान् छगनराजजी बागरेचा के कुलदीपक पूज्यश्री मूलतः सिवाना (राजस्थान) के निवासी हैं.<br><br>\n\n● <b>दीक्षा</b>\n\n<br>आपने वैशाख कृष्ण (राजस्थानी चैत्र कृष्ण) दसमी, 19 अप्रैल 1982 को चेन्नई (तमिलनाडु) की पावन धरा पर 16 वर्ष की किशोरावस्था में जैन दीक्षा अंगीकार करके श्रुत समुद्धारक, राष्ट्रसंत आचार्य श्री पद्मसागरसूरीश्वरजी महाराज साहब का शिष्यत्व स्वीकार किया.<br><br>\n\n● <b>आचार्य पद</b>\n\n<br>मार्गशीर्ष शुक्ल दशमी, 1 दिसंबर 2014 को नाकोड़ा तीर्थ की ऐतिहासिक धरा पर हजारों लोगों की उपस्थिति में एक भव्य और गौरवशाली समारोह में पूज्य गुरुदेवश्री ने आपश्री को आचार्य पद पर अभिषिक्त किया.<br><br>\n\n● <b>परंपरा</b>\n\n<br>आप जैन धर्म की श्वेतांबर मूर्तिपूजक परंपरा के महान् योगी आचार्य श्री बुद्धिसागरसूरीश्वरजी महाराज साहब की गौरवशाली सागर शाखा के क्रांतिकारी आचार्य हैं.<br><br>\n\n● <b>शिष्य-संपदा</b>\n\n<br>आपके शिष्य मुनि श्री पद्मविमलसागरजी महाराज एवं मुनि श्री निर्ग्रन्थविमलसागरजी महाराज आत्म-साधना और जिनशासन की प्रभावना में सर्वभावेन समर्पित हैं.<br><br>\n\n● <b>शिक्षा</b>\n\n<br>महापुरुष स्कूली शिक्षा के मोहताज़ नहीं होते. यह तथ्य आप पर भी लागू होता है. आपने सिर्फ आठवीं तक स्कूली शिक्षा पाई, लेकिन सतत अध्ययन, अध्यवसाय, श्रुत-साधना और श्रुतदेवी मां सरस्वती की आराधना के फलस्वरूप आपने ज्ञान-ध्यान की अतल गहराइयों का स्पर्श किया है.<br><br>\n\n● <b>भाषा व अध्ययन</b>\n\n<br>हिंदी, गुजराती, संस्कृत, प्राकृत, अंग्रेजी, मराठी व राजस्थानी भाषाओं के जानकार प्रतिभापुंज आचार्यश्री धार्मिक, आध्यात्मिक, दार्शनिक, व्यवहारिक, राजनीतिक व सामाजिक विषयों के गहन अध्येता हैं.<br><br>\n\n● <b>व्यक्तित्व व कृतित्व</b>\n\n<br>हिन्दी भाषा में ओजस्वी प्रवचनों और सरस्वती की साधनाओं के लिए मशहूर आचार्य प्रवर बहुमुखी व्यक्तित्व के धनी, अनुशासन के प्रबल समर्थक, निष्ठा संपन्न विरल श्रमण हैं. अपने 36 वर्षीय संयम जीवन में अब तक आपने सैकड़ों धार्मिक, सामाजिक और मानवता को समर्पित लोकोपयोगी कार्य संपादित करवाकर अपार यश अर्जित किया है.<br><br>\n\n ]]>
+
+</string>
+    <string name="about_guruji_guj">ગુજરાતી</string>
+
+    <string name="about_guruji_vision_eng">English</string>
+    <string name="about_guruji_vision_hnd"><![CDATA[<b>आचार्य श्री विमलसागरसूरीश्वरजी महाराज का विज़न</b><br><br>विज़न का आशय है एक ऐसी सुस्पष्ट दृष्टि, दूरदृष्टि या दृष्टिकोण से, जिसके आधार पर किसी युग मनीषी का मिशन या अभियान आगे बढ़ता है. आचार्य श्री विमलसागरसूरीश्वरजी महाराज का विज़न स्पष्ट है. वह साधना से उपजा और अनुभव की आंच में तपा है, इसलिए प्रभावी है. निम्नलिखित छह बिंदुओं से उनके वज़नदार विज़न को समझा जा सकता है.<br><br><b>1. संस्कृति की रक्षा</b><br>जब सांस्कृतिक गौरव टूटता है तो आत्मगौरव, धर्मगौरव और राष्ट्रगौरव भी खंडित हुए बगैर नहीं रहता है. इसलिए हर कीमत पर अपनी सांस्कृतिक परंपराओं की रक्षा करना.<br><br><b>2. सुसंस्कारों का वैभव</b><br>धन-वैभव और सुख-संपदा के रूप में हम कितना भी अर्जित कर लें और भौतिक सफलता के किसी भी मुकाम पर पहुंच जायें, लेकिन आखिरकार तो सिर्फ सुसंस्कार ही मनुष्य के जीवन का सही मूल्यांकन करेंगे. अतः उज्ज्वल नए भारत के निर्माण के लिए अलग-अलग माध्यमों से बाल व किशोर वर्ग में सुसंस्कारों का गहराई से सिंचन करना.<br><br><b>3. एकता और सद्भावना</b><br>जातिवाद, वर्णवाद और संप्रदायवाद हथियार हैं. यह राष्ट्रीय एकता तथा भारतीय समाज व संस्कृति के लिए अत्यंत घातक हैं. अतः इनसे बचना और इन से ऊपर उठकर सोचना.  परस्पर सद्भावना और सामाजिक समरसता के द्वारा समाज व राष्ट्र की उन्नति का सपना साकार करने के लिए जन-जन को जगाना.<br><br><b>4. सही शिक्षा-व्यवस्था</b><br>शिक्षा व्यवस्था ऐसी होनी चाहिए, जो मात्र पेट भरने धन कमाने तक ही सीमित नहीं होकर, मूल्यपरक जीवन जीने की कला भी सिखाती हों. इसके लिए धन और धनवानों से अधिक गुणवानों को महत्व देना एवं श्रुत-साधना के द्वारा सम्यगज्ञान की सरिता बहाना.<br><br><b>5. आदर्श शासन-व्यवस्था</b><br>शासन और प्रशासन; समाज व राष्ट्र की सुरक्षा, व्यवस्था और उन्नति के लिए होने चाहियें. अगर प्रजा को डराने-धमकाने के लिए इनका उपयोग होता है तो यह अफसोसजनक है. अतः आदर्श राज्य व्यवस्था के लिए प्रयास करना.<br><br><b>6. धर्म की सार्थकता</b><br>धर्म सिर्फ पूजा-पाठ, व्रत-त्यौहार, प्रार्थना, उपवास, इबादत, रोजा, हज़ या तीर्थयात्रा तक सीमित नहीं होना चाहिए. वह अहिंसा, नैतिकता, शाकाहार और मानवता के रूप में समग्र सृष्टि के लिए कल्याणकारी सिद्ध हों, ऐसी शिक्षा जन-जन तक पहुंचाना.<br><br>]]></string>
+    <string name="about_guruji_vision_guj">ગુજરાતી</string>
+
+    <string name="about_guruji_mission_eng">English</string>
+    <string name="about_guruji_mission_hnd"><![CDATA[<b>आचार्य श्री विमलसागरसूरीश्वरजी महाराज साहब का मिशन</b><br><br>● <b>पदयात्राएं और शिविर</b><br>अपने मिशन को सफल बनाने के लिए पूज्य आचार्य प्रवर ने तमिलनाडु, आंध्रप्रदेश, कर्नाटक, गोवा, महाराष्ट्र, मध्यप्रदेश, गुजरात व राजस्थान में करीब 70000 किलोमीटर की सुदीर्घ पदयात्राएं कर हजारों लोगों को बोध दिया है. परिवर्तन शिविर, जागरण शिविर, बाल संस्कार शिविर, दंपत्ति शिविर, कन्या उत्कर्ष शिविर, सास बहू शिविर, पारिवारिक शिविर और आध्यात्मिक ज्ञान शिविर लगाकर आप जन-जन को जगाने का सार्थक पुरुषार्थ कर रहे हैं.<br><br>● <b>प्रवचनों से परिवर्तन</b><br>अब तक आपने 6000 से अधिक प्रभावशाली प्रवचन दिए हैं. आप की ओजस्वी वाणी से प्रेरित होकर हजारों लोग व्यसनमुक्त और शाकाहारी बने हैं. आपकी क्रांतिकारी विचारधारा नास्तिकों को आस्तिक और आस्तिकों को नैतिक बना रही है. हजारों युवा जिन्दगियों के आप कुशल राहबर बने हैं.<br><br>● <b>सर्वधर्म सद्भाव</b><br>सांप्रदायिक भेदभावों से परे मस्जिदों, हिन्दू मंदिरों और सार्वजनिक सभाओं में आपके हजारों मर्मस्पर्शी जाहिर प्रवचन हुए हैं, हो रहे हैं.<br><br>● <b>जागरण का शंखनाद</b><br>स्कूलों-कोलेजों, बाल सुधार गृहों और कारागृहों में अनेक प्रवचन देकर आप समाज के नवनिर्माण का प्रयत्न कर रहे हैं.<br><br>● <b>लेखन और सोशियल मिडिया</b><br>पुस्तकों व आलेखों के प्रकाशन, CD-DVD के निर्माण तथा YouTube, Facebook, WhatsApp और मोबाइल एप्लीकेशन के द्वारा आचार्य प्रवर वैचारिक जागरण का यशस्वी कार्य कर रहे हैं.<br><br>● <b>युवा संगठन</b><br>जगह-जगह VS Grouo के रूप में युवा संगठनों का निर्माण कर तथा अन्य संस्थाओं और संगठनों को साथ लेकर श्रद्धेय आचार्यश्री सामाजिक, धार्मिक व मानवीय कार्यो को बेहतरीन गति दे रहे हैं.<br><br>● <b>हर कार्य मे अनूठापन</b><br>एकता, अनुशासन, निष्ठा और समर्पण की भूमिका पर आयोजित होते पूज्यवर के एक-एक कार्यक्रम उनके विज़न और मिशन की अनूठी मिसाल पेश करते हैं. आपके आज्ञाकारी शिष्य और प्रशिष्य भी अपने पूज्य गुरुजी के विज़न और मिशन के लिए प्राणप्रण से जुटे हुए हैं.<br><br>]]></string>
+    <string name="about_guruji_mission_guj">ગુજરાતી</string>
+
+    <string name="about_app_eng">English</string>
+    <string name="about_app_hnd"><![CDATA[<b>नई सोच, सही दिशा : आवश्यकता और उपयोगिता</b><br><br>जाने-माने जैनाचार्य श्री विमलसागरसूरीश्वरजी महाराज के असाधारण विज़न और परिवर्तनकारी मिशन की प्रभावशाली फलश्रुति है : नई सोच, सही दिशा.<br><br>मनुष्य की सुप्त चेतना को जगाने और उसे सन्मार्ग पर आगे बढ़ाने के लिए बार-बार ज्ञान और प्रेरणाओं का ईधन देना पड़ता है. इसी पवित्र उद्देश्य के लिए "नई सोच, सही दिशा" के रूप में मोबाइल एप्लीकेशन का शुभारंभ किया गया है.<br><br>इसमें सकारात्मक चिंतन, सांस्कृतिक गौरव, अखूट आत्मविश्वास, धार्मिक-आध्यात्मिक विकास, सामाजिक सद्भावना, शाकाहारी जीवन शैली, अहिंसा, नैतिकता, सदाचार और संस्कारों के रूप में मानवीय जीवन मूल्यों के जतन का नया संदेश मुखरित है.<br><br>यह एप्लीकेशन सामाजिक-वैचारिक क्रांति का सूत्रपात करेगी. यह हर जाति, वर्ग और आयु के जिज्ञासुओं को ज्ञान व सदाचार से समृद्ध करेगी.<br><br>इसमें यूजर्स द्वारा पोस्ट की गई बहु उपयोगी एवं महत्वपूर्ण सामग्री को भी स्थान मिलेगा. जिज्ञासुओं के औचित्यपूर्ण व ज्ञानप्रद प्रश्नों के उत्तर मिलेंगे. पूज्य गुरुजी के कार्यक्रमों की विस्तृत जानकारी तथा अन्य महत्वपूर्ण सूचनाएं मिलेगी. ऑडियो-विडियो का खज़ाना तथा फोटो गेलेरी में बिखरी अतीत की गौरवशाली स्मृतियां होगी.<br><br>सुविचारों से समृद्ध इस एप्लीकेशन में ज्वलंत विषयों की मार्मिक प्रस्तुति होगी. आईये! हम सब मिलकर "नई सोच, सही दिशा" को अपनायें.<br><br>]]></string>
+    <string name="about_app_guj">ગુજરાતી</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="p_p_content">A Privacy Policy agreement is the agreement where you specify if you collect personal data, what kind of personal data you collect from users and what you do with that data.</string>
+    <string name="submit">Submit</string>
+    <!--<string name="vichar_kranti">विचार क्रान्ति</string>-->
+    <string name="vichar_kranti">Vichar Kranti</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="location">Location/City</string>
+    <string name="sign_in">Sign in?</string>
+    <string name="login">Login</string>
+    <string name="skip">Skip</string>
+
+    <string name="reopen">Something are wrong please reopen the application.</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="competition_from_9_00_pm_to_9_30_pm">Competition Starts From \n 9.00 PM to 9.30 PM Daily.</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="update">Update</string>
+    <string name="full_name">Full Name</string>
+    <string name="my_profile">My Profile</string>
+    <string name="view_result">View Result</string>
+
+</resources>

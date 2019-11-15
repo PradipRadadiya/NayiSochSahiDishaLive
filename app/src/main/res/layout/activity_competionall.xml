@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_back"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_home" />
+
+    <LinearLayout
+        android:id="@+id/lin_comp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_cmp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="10dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+            android:id="@+id/txt_last_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_rect_shapeoneselect"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="Last Question"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:visibility="gone"
+            />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_old_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_rect_shapeoneselect"
+            android:gravity="center"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:text="Last Competition Result"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:layout_marginTop="5sp"
+            />
+
+    </LinearLayout>
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+        android:id="@+id/txt_final_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_rect_shapeoneselect"
+        android:gravity="center"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:text="Competition Final Result"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:visibility="gone"
+        android:layout_marginTop="5sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview_competition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txt_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:text="@string/competition_from_9_00_pm_to_9_30_pm"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

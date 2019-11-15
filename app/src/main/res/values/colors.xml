@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#CD198B</color>
+    <!--<color name="colorPrimary">#03168F</color>-->
+    <!--<color name="red">#aa000c</color>-->
+    <color name="red">#FF292929</color>
+    <color name="textColorPrimary">#FFF</color>
+
+    <color name="colorAccent">#000000</color>
+    <!--<color name="colorAccent">#3F51B5</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorTabBackground">#E6E7E9</color>
+    <!--<color name="colorTabBackground">#f9f2d3</color>-->
+    <color name="colorTabColor">#0D47A1</color>
+    <color name="textColor">#000</color>
+
+    <color name="notificationbackground">#e8e8fe</color>
+
+    <color name="header">#FDF9E2</color>
+    <color name="view">#ADADAD</color>
+    <color name="views">#4d4c4c</color>
+    <color name="white">#ffffff</color>
+    <!--<color name="kprogresshud_grey_color">#E1DBC5</color>-->
+    <color name="kprogresshud_grey_color">#ADADAD</color>
+    <!--<color name="back">#F9F2D3</color>-->
+    <color name="back">#E6E7E9</color>
+    <color name="black">#000000</color>
+
+    <color name="homepage_back">#E6E7E9</color>
+    <color name="item_back">#FEFEFE</color>
+    <color name="rect_border">#DCDEDB</color>
+
+
+    <color name="text_new_post">#FF7F7F80</color>
+    <color name="orange">#F36D21</color>
+
+    <color name="o_p_no">#303030</color>
+
+    <color name="redcolor">#ff0000</color>
+    <color name="green">#4CD211</color>
+    <color name="greendark">#FF276C08</color>
+    <color name="redprogress">#FF0009</color>
+    <color name="marks_back">#DBFBC2</color>
+
+</resources>

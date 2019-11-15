@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabBackground"
+    tools:ignore="Overdraw">
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:padding="5dp"
+        android:text="Question"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+        android:id="@+id/edit_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btnReply"
+        android:background="@drawable/competiti_edittext_shape"
+        android:hint="Reply your answer"
+        android:padding="5dp"
+        android:textColor="@color/cardview_dark_background"
+        android:inputType="textMultiLine"
+        android:ems="100"
+        android:focusable="true"
+        android:textColorHint="@color/cardview_dark_background"
+
+
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <Button
+        android:id="@+id/btnReply"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_margin="4dp"
+        android:background="@color/red"
+        android:text="Reply"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+    </RadioGroup>
+
+</RelativeLayout>

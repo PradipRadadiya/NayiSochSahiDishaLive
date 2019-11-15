@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:ignore="Overdraw">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/ti_alert"
+            tools:ignore="ContentDescription" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:text="Please check your internet connection"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/networkConnectivity_tryagainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15sp"
+            android:layout_marginRight="15sp"
+            android:background="#6fb100"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="try again"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

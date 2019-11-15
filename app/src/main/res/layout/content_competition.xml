@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_compe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabBackground"
+    tools:context="com.vimalsagarji.vimalsagarjiapp.categoryactivity.AudioCategory"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/toolbar_competition"
+            layout="@layout/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditTextBold
+
+            android:id="@+id/etCompetitionCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_competition"
+            android:background="@color/homepage_back"
+            android:focusable="false"
+            android:hint="Competition Category"
+            android:lines="1"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/etCompetitionCategory"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewline">
+
+            <GridView
+                android:id="@+id/grid_audio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:id="@+id/txt_nodata_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="No Category \n Available"
+                android:textColor="@color/colorTabColor"
+                android:textSize="40sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_competition"
+            android:background="@color/white"
+            android:text="This feature will be activated when the number of application users increases to the required quantity.\n\nएप्लिकेशन के उपयोगकर्ताओं की संख्या पर्याप्त मात्रा में बढ़ जाने के बाद यह फीचर काम करेगा."
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:padding="25dp"
+            android:lineSpacingExtra="7dp"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

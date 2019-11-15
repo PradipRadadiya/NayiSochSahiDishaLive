@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homepage_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/back_gradiant">
+
+                    <ImageView
+                        android:id="@+id/img_slide"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner"
+                        android:visibility="visible"
+                        android:contentDescription="TODO" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.DashboardCirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewPager"
+                        android:padding="2dp"
+                        app:gapWidth="10dp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_menu_drawer"
+                        style="@style/relatibe_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_menu"
+                        android:contentDescription="TODO" />
+
+                    <ImageView
+                        android:id="@+id/img_search"
+                        style="@style/relatibe_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/img_notification"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_search_white"
+                        android:contentDescription="TODO" />
+
+                    <ImageView
+                        android:id="@+id/img_notification"
+                        style="@style/relatibe_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_notifications"
+                        android:contentDescription="TODO" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_logo"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/lins"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewTitle
+                            android:id="@+id/txt_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/txt_suriji"
+                            android:gravity="left"
+                            android:lines="1"
+                            android:text="@string/app_name"
+                            android:textColor="@color/white"
+                            android:textSize="28dp" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_suriji"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left"
+                            android:lines="1"
+                            android:text="@string/guruji"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/lin_style1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_info"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/infromation"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info1"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/information" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_style1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_event"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/event"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info2"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/event" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_style1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_thought"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/thoughts"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info5"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/thought" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    style="@style/lin_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_audio"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/audio"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info3"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/audio" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_video"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/video"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info4"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/video" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_gallery"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/gallary"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info6"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/gallaery" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/lin_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_qa"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/qa"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info8"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/question" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_comp"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/competition"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info7"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/competition" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/lin_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_rect_shape">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_bypeople"
+                        style="@style/relatibe_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bypeople"
+                            android:contentDescription="TODO" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            style="@style/top_margin_home_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_info"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/bypeople" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left" />
+
+</android.support.v4.widget.DrawerLayout>

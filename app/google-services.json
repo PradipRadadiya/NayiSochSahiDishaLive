@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "622563802808",
+    "firebase_url": "https://nayi-soch-sahi-disha.firebaseio.com",
+    "project_id": "nayi-soch-sahi-disha",
+    "storage_bucket": "nayi-soch-sahi-disha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622563802808:android:2dc6464cddff89fb",
+        "android_client_info": {
+          "package_name": "com.aacharyavimalsagarsuriji.nayisochsahidisha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622563802808-8imdrol24n30aktldpvrlan4bmr3k0tc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aacharyavimalsagarsuriji.nayisochsahidisha",
+            "certificate_hash": "16afcfad6c9f20d0d321753f6e3f4d60b88093bf"
+          }
+        },
+        {
+          "client_id": "622563802808-hdv0rpcbp3dj7qcb35qpl5vp6cl9oij9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa6PVaIeXwZ5RAJDzTXl8Pup-OzueQBXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622563802808-hdv0rpcbp3dj7qcb35qpl5vp6cl9oij9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

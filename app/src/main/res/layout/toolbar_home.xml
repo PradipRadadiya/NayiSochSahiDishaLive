@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/back_gradiant_reverce"
+    android:contentInsetStart="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetEnd="0dp"
+    android:contentInsetRight="0dp"
+    android:gravity="center_vertical"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgarrorback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:src="@drawable/ic_keyboard_arrow_left"
+            tools:ignore="ContentDescription"
+
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:src="@drawable/fly"
+            tools:ignore="ContentDescription"
+
+            />
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-8dp"
+            android:layout_weight="7"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            tools:ignore="RtlHardcoded" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_fav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_fav_list"
+            android:padding="8sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="TODO"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/ic_search_white" />
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/ic_home"
+            android:visibility="gone"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

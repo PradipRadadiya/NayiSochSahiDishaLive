@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_audio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homepage_back"
+    tools:context="com.vimalsagarji.vimalsagarjiapp.categoryactivity.AudioCategory"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+
+        <include
+            android:id="@+id/toolbar_audio"
+            layout="@layout/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_audio"
+            android:background="@color/homepage_back"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditTextBold
+                android:id="@+id/etAudioCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="Audio Category"
+                android:lines="1"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imgSerch"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:src="@drawable/search"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/lin"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewline">
+
+            <GridView
+                android:id="@+id/grid_audio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                android:id="@+id/txt_nodata_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="No Category \n Available"
+                android:textColor="@color/colorTabColor"
+                android:textSize="40sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

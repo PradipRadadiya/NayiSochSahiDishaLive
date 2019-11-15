@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/homepage_back"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_newpostbypeople"
+        style="@style/Widget.Toolbar"
+        layout="@layout/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/redcolor"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+                android:id="@+id/e_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/newpostbypeopleet"
+                android:inputType="text"
+                android:lines="1"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/cardview_dark_background" />
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/redcolor"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+                android:id="@+id/e_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/newpostbypeopleet"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Youtube VideoLink :"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+                android:id="@+id/edit_videolink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/newpostbypeopleet"
+                android:inputType="text"
+                android:lines="1"
+                android:padding="10dp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <ImageView
+                android:id="@+id/img_disp"
+                android:layout_width="175sp"
+                android:layout_height="175sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"
+                android:contentDescription="TODO" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:id="@+id/txt_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/newpostbypeopleet"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Select Photo"
+                android:textColor="@color/text_new_post"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:id="@+id/txt_audio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/newpostbypeopleet"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Select Audio"
+                android:textColor="@color/text_new_post"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                android:id="@+id/txt_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/newpostbypeopleet"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Select Video"
+                android:textColor="@color/text_new_post"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_rect_shapeoneselect"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

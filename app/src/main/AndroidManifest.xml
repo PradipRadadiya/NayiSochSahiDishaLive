@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vimalsagarji.vimalsagarjiapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- android:name=".activity.splash.ThirdSpalshScreenActivity" -->
+
+        <activity
+            android:name=".activity.splash.ThirdSpalshScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.splash.SecondSplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!--
+            <activity
+            android:name=".activity.splash.ThirdSpalshScreenActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        -->
+        <activity
+            android:name=".activity.InformationDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="information_comment_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPrefix="/vimalsagarji/infodetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.competition.WinnerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.InformationCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="information_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.EventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="event_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".categoryactivity.EventCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".categoryactivity.AudioCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".categoryactivity.VideoCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".today_week_month_year.GalleryCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="gallery_item_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPattern="/vimalsagarji/gallerydetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.AudioCategoryitem"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="audio_cat_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.VideoCategoryItem"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="vidio_cat_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Gallery_gridview_full_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.VideoDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="video_comment_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPrefix="/vimalsagarji/videodetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.QuestionAnswerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="question_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.ThoughtsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="thought_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ThoughtsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="thought_comment_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPrefix="/vimalsagarji/thoughtdetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".categoryactivity.CompetitionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="competition_item_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.CompetitionGridListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NewPostByPeople"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".VideoFullActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".today_week_month_year.ByPeople"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="bypeople_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ByPeopleDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="bypeople_comment_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".today_week_month_year.OpinionPoll"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="opinionPoll_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.EventDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="event_comment_click" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPrefix="/vimalsagarji/eventdetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AudioDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPrefix="/vimalsagarji/audiodetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".utils.AllQuestionDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPattern="/vimalsagarji/questiondetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".categoryactivity.Gallery_All_Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.CompetitionListQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityHomeMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash_Activity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlreadyRegisterUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.CompetitionList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.NotificationActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commentlist.InformationCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commentlist.EventCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commentlist.AudioCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commentlist.VideoCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commentlist.ThoughtCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commentlist.ByPeopleCommentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.AboutAppInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.AboutAppGuruji"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.GurujiMissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.GurujiVisionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AudioPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EventsAllDisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.VideoAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.VideoAllActivityByPeople"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.AudioAllBypeopleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.AudioAllEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.YoutubePlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.AudioMainCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.EventGalleryAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.EventGalleryAllImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.ParticularUserResultDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.OldCompetitionAllActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".jcplayer.JcPlayerService" />
+
+        <receiver
+            android:name=".jcplayer.JcPlayerNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".util.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <receiver android:name=".utils.IncomingSms"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/push_notification" />
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_icon" -->
+        <!-- android:resource="@drawable/push_notification_small" /> -->
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/red" />
+
+        <activity
+            android:name=".activity.mainactivity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.CompetitionAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.CompetitionRulesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".today_week_month_year.CompetitionQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.TopTenCompetitionList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.VisharMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mainactivity.JainismActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.aacharyavimalsagarsuriji.com"
+                    android:pathPattern="/vimalsagarji/jainismdetail"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.mainactivity.ProfileActivity" />
+        <activity android:name=".activity.mainactivity.JainismDetailActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f2e3b7adc560f7def2b1126969c387485bc43cdc" />
+
+        <activity android:name=".activity.competition.CompetitionFinalResultNote" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

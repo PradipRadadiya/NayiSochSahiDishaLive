@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabBackground"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:ignore="Overdraw">
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+        android:id="@+id/txtCommentUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Admin"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:lines="1"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+        android:id="@+id/txtCommentDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCommentUserName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:lineSpacingExtra="5dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+</RelativeLayout>

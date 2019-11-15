@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_event"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_thought"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp"
+
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thoughts"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thought" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_audio"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp"
+
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audio"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audio" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_video"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_info"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp"
+
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/infromation"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/information" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_gallery"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gallary"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallaery" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_qa"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp"
+
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qa"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_comp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/competition"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/competition" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_op"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp"
+
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/opinionpoll"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Opinionpoll" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_bypeople"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bypeople"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/dwawertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bypeople" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

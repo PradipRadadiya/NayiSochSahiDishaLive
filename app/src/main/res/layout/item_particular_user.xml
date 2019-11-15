@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="5sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect_shape"
+        android:orientation="vertical"
+        android:padding="8sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            android:id="@+id/txt_index"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Q."
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:lineSpacingExtra="7sp"
+                            tools:ignore="HardcodedText" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            android:id="@+id/txt_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:padding="10sp"
+                            android:text="Guru Purnima"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:lineSpacingExtra="7sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5sp">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:paddingLeft="10sp"
+                            android:text="Options : "
+                            android:textColor="@color/black"
+                            android:visibility="gone"
+                            android:textSize="17sp"
+                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:id="@+id/txt_option"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:lineSpacingExtra="10sp"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5sp"
+                        android:layout_marginTop="-20sp"
+                        >
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="Your answer : "
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            android:id="@+id/txt_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="Normal"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:lineSpacingExtra="7sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5sp">
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="Correct Answer : "
+                            android:textSize="17sp"
+                            android:textColor="@color/colorPrimary"
+                            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+                            android:id="@+id/txt_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="Normal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17sp"
+                            android:lineSpacingExtra="7sp"
+                            tools:ignore="HardcodedText,InconsistentLayout" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/back_gradiant"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slidebar_image"
+        android:contentDescription="TODO" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="154dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/drawer_logo"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewTitle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:gravity="center"
+            android:text="@string/title_activity_main2"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

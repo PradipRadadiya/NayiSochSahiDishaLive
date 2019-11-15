@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_splash"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/rel_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/round_rect"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="400dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomEditText
+                        android:id="@+id/edit_select_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_rect_shape"
+                        android:hint="Select Country"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:layout_marginTop="8sp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_marginTop="8sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/etName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/black"
+                                android:textColor="@color/black"
+                                android:drawableLeft="@drawable/ic_action_user_black"
+                                android:hint="Full Name"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/etlastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/black"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:drawableLeft="@drawable/ic_action_user_black"
+                                android:hint="Full Name"
+                                android:inputType="textPersonName|textCapWords"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:drawableLeft="@drawable/ic_action_gmail_black"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:drawableLeft="@drawable/ic_action_phone_black"
+                            android:hint="Mobile"
+                            android:inputType="phone"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:drawableLeft="@drawable/ic_action_location_black"
+                            android:hint="@string/location"
+                            android:inputType="textPostalAddress"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextView
+                        android:id="@+id/txt_alreready"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:text="Sign in?"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="22dp"
+                        android:background="@drawable/round_rect_shapeoneselect"
+                        android:text="Login"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="TODO"
+                android:elevation="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/users" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/rel_box"
+                android:layout_marginBottom="-12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/diamond" />
+
+                <ImageView
+                    android:id="@+id/img_close"
+                    style="@style/relatibe_back"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/close" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_rect_shapeone"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <com.vimalsagarji.vimalsagarjiapp.utils.CustomTextViewBold
+            android:id="@+id/textview_skip"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Skip"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
